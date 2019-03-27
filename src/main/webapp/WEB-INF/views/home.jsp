@@ -7,6 +7,6 @@
 </head>
 <body>
     <h1>EXM01: Home</h1>
-    Introdução
+    <p>Bem vindo ${nome} ao curso de Introdução ao Spring boot        </p>
 </body>
 </html>
