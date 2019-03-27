@@ -1,3 +1,4 @@
+<%@page pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +7,6 @@
 </head>
 <body>
     <h1>EXM01: Home</h1>
-    
+    Introdução
 </body>
 </html>
