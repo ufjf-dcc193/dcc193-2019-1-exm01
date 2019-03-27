@@ -9,6 +9,7 @@
     <h1>EXM01: Form</h1>
     <form action="index.html" method="post">
         Nome: <input name="nome"/>
+        Idade: <input name="idade" type="number"/>
         <input type="submit"/>
     </form>    
 </body>
