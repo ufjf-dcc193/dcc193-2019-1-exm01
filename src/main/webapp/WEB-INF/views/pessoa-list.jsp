@@ -10,7 +10,7 @@
 
 <body>
     <h1>EXM01: Lista de Pessoas</h1>
-    <ul>
+    <ol>
         <c:forEach var="pessoa" items="${galera}">
             <li value="${pessoa.id}">${pessoa.nome} ${pessoa.idade} anos</li>
         </c:forEach>
