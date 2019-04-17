@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.view.RedirectView;
 
 @Controller
 public class HomeController {
@@ -36,11 +37,11 @@ public class HomeController {
     }
 
     @RequestMapping("novo.html")
-    ModelAndView novo(Pessoa p){
-        ModelAndView mv = new ModelAndView();
-        mv.setViewName("redirect:pessoas.html");
+    RedirectView novo(Pessoa p){
+        //ModelAndView mv = new ModelAndView();
+        //mv.setViewName("redirect:pessoas.html");
         repPessoa.save(p);
-        mv.addObject("pessoa",p);
-        return mv;
+        //mv.addObject("pessoa",p);
+        return new RedirectView("pessoas.html");
     }
 }
