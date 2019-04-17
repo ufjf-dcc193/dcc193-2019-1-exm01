@@ -38,7 +38,7 @@ public class HomeController {
     @RequestMapping("novo.html")
     ModelAndView novo(Pessoa p){
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("novo");
+        mv.setViewName("redirect:pessoas.html");
         repPessoa.save(p);
         mv.addObject("pessoa",p);
         return mv;
