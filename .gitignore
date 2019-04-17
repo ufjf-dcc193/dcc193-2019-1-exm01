@@ -1,7 +1,8 @@
 HELP.md
 /target/
 !.mvn/wrapper/maven-wrapper.jar
-
+~/teste-db
+derby.log
 ### STS ###
 .apt_generated
 .classpath
